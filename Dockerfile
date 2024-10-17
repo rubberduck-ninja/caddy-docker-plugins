@@ -10,4 +10,4 @@ ARG IMAGE_STATS
 ENV IMAGE_STATS=${IMAGE_STATS} CUSTOM_BUILD="" WEBUI_PORTS="8080/tcp,8080/udp,8443/tcp,8443/udp"
 ENV CONFIG_FILE="/config/Caddyfile"
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
-ENTRYPOINT caddy --config $CONFIG_FILE
+ENTRYPOINT caddy run --config $CONFIG_FILE
