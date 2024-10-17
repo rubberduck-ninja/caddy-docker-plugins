@@ -5,8 +5,7 @@ RUN xcaddy build \
   --with github.com/caddy-dns/cloudflare \
   --with github.com/greenpau/caddy-security \
   --with github.com/mholt/caddy-l4 \
-  --with github.com/mholt/caddy-ratelimit \
-  --with github.com/caddy-plugins/nobots
+  --with github.com/mholt/caddy-ratelimit
 
 FROM caddy:$version
 EXPOSE 8080 8443
