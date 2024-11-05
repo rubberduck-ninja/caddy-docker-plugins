@@ -7,6 +7,7 @@ RUN xcaddy build \
   --with github.com/mholt/caddy-l4 \
   --with github.com/mholt/caddy-ratelimit \
   --with github.com/ggicci/caddy-jwt
+  --with github.com/muety/caddy-remote-host
 
 FROM caddy:$version
 EXPOSE 8080 8443
